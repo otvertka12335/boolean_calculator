@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0"
+      prefWidth="420.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="Controller">
+   <ComboBox fx:id="firstOperand" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="125.0"/>
+   <ComboBox fx:id="secondOperand" layoutX="266.0" layoutY="14.0" prefHeight="25.0" prefWidth="125.0"/>
+   <Label fx:id="resultField" layoutX="103.0" layoutY="57.0" prefHeight="17.0" prefWidth="194.0"
+          textAlignment="CENTER"/>
+   <Button fx:id="andOperation" accessibleHelp="and" accessibleRoleDescription="and" accessibleText="and" layoutX="25.0"
+           layoutY="88.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="70.0" text="&amp;"
+           textAlignment="CENTER">
+      <tooltip>
+         <Tooltip text="І"/>
+      </tooltip>
+   </Button>
+   <Button fx:id="orOperation" layoutX="121.0" layoutY="90.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0"
+           text="|">
+      <tooltip>
+         <Tooltip text="Або"/>
+      </tooltip>
+   </Button>
+   <Button fx:id="notFirstOperator" layoutX="218.0" layoutY="90.0" mnemonicParsing="false" prefHeight="25.0"
+           prefWidth="70.0" text="!first">
+      <tooltip>
+         <Tooltip text="Заперечення до першго операнда"/>
+      </tooltip>
+   </Button>
+   <Button fx:id="notSecondOperator" layoutX="310.0" layoutY="90.0" mnemonicParsing="false" prefHeight="25.0"
+           prefWidth="77.0" text="!second">
+      <tooltip>
+         <Tooltip text="Заперечення до другого операнда"/>
+      </tooltip>
+   </Button>
+   <Button fx:id="contradictionOperator" layoutX="25.0" layoutY="138.0" mnemonicParsing="false" prefHeight="25.0"
+           prefWidth="70.0" text="F">
+      <tooltip>
+         <Tooltip text="Суперечність"/>
+      </tooltip>
+   </Button>
+   <Button fx:id="norOperation" layoutX="121.0" layoutY="138.0" mnemonicParsing="false" prefHeight="25.0"
+           prefWidth="70.0" text="NOR">
+      <tooltip>
+         <Tooltip text="Стрілка пірса"/>
+      </tooltip>
+   </Button>
+   <Button fx:id="converseNonimplicationOperation" layoutX="218.0" layoutY="138.0" mnemonicParsing="false"
+           prefHeight="25.0" prefWidth="70.0" text="Bpq">
+      <tooltip>
+         <Tooltip text="Заперечення до стрілки Пірса"/>
+      </tooltip>
+   </Button>
+   <Button fx:id="materialNoimplicationOperation" layoutX="310.0" layoutY="138.0" mnemonicParsing="false"
+           prefHeight="25.0" prefWidth="70.0" text="↛">
+      <tooltip>
+         <Tooltip text="Неімплікація"/>
+      </tooltip>
+   </Button>
+   <Button layoutX="25.0" layoutY="186.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="XOR"
+           fx:id="xorOperation">
+      <tooltip>
+         <Tooltip text="Виключна диз'юнкція"/>
+      </tooltip>
+   </Button>
+   <Button fx:id="notAndOpration" layoutX="121.0" layoutY="186.0" mnemonicParsing="false" prefHeight="25.0"
+           prefWidth="70.0" text="NAND">
+      <tooltip>
+         <Tooltip text="Штрих Шефера"/>
+      </tooltip>
+   </Button>
+   <Button layoutX="218.0" layoutY="186.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="XNOR"
+           fx:id="xnorOperation">
+      <tooltip>
+         <Tooltip text="Заперечення до виключайочого або"/>
+      </tooltip>
+   </Button>
+   <Button fx:id="materionalConditionalOperation" layoutX="310.0" layoutY="186.0" mnemonicParsing="false"
+           prefHeight="25.0" prefWidth="70.0" text="→">
+      <tooltip>
+         <Tooltip text="Логічна імплікація"/>
+      </tooltip>
+   </Button>
+   <Button fx:id="converseImplicationOperation" layoutX="25.0" layoutY="236.0" mnemonicParsing="false" prefHeight="25.0"
+           prefWidth="70.0" text="←">
+      <tooltip>
+         <Tooltip text="Обернена імплікація"/>
+      </tooltip>
+   </Button>
+   <Button fx:id="tautologyOperation" layoutX="121.0" layoutY="236.0" mnemonicParsing="false" prefHeight="25.0"
+           prefWidth="70.0" text="T">
+      <tooltip>
+         <Tooltip text="Тавтологія"/>
+      </tooltip>
+   </Button>
+   <Button fx:id="eqOperation" layoutX="218.0" layoutY="236.0" mnemonicParsing="false" prefHeight="25.0"
+           prefWidth="70.0" text="Eq">
+      <tooltip>
+         <Tooltip text="Еквівалентність"/>
+      </tooltip>
+   </Button>
+</Pane>
